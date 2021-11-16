@@ -64,7 +64,13 @@ git clone https://github.com/fortunetede/Django-Api-Starter.git
     |-settings.py
     |-urls.py
 ```
-##### Install Requirements
-```curl
-git clone https://github.com/fortunetede/Django-Api-Starter.git
+##### Setup environment and Install Requirements
+```python
+# create a virtual environment
+
+> pip3 install virtualenv
+
+> virtualenv -p python3 venv
+
+> source venv/bin/activate  
 ```
