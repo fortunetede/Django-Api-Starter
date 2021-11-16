@@ -58,18 +58,12 @@ class MyUserAdmin(UserAdmin):
     form = UserChangeForm
     add_form = UserCreationForm
     list_display = ('email', 'full_name', 'created', 'phone_number')
-    list_filter = ('is_admin', 'is_active')
+    list_filter = ('is_admin',)
     fieldsets = (
         (None, {'fields': ('email', 'password')}),
         ('Personal info', {'fields': ('first_name', 'last_name', 'username', 'phone_number', 'user_type')}),
-        ('Permissions', {'fields': ( 'is_superuser', 'is_active')}),
+        ('Permissions', {'fields': ( 'is_superuser',)}),
         ('Important dates', {'fields': ('last_login',)}),
-    )
-    add_fieldsets = (
-        (None, {
-            'classes': ('wide',),
-            'fields': ('email', 'first_name', 'last_name', 'password1', 'password2')}
-        ),
     )
     search_fields = ('email', 'phone_number', 'first_name', 'last_name')
     ordering = ('email',)

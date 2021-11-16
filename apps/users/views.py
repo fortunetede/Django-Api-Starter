@@ -26,7 +26,6 @@ class UserSignUp(APIView):
             username = '%s%s'%(first_name, last_name)
             user = APPUser(email=email, first_name=first_name, last_name=last_name, username=username, phone_number=phone_number, user_type="APP USER")
             user.set_password(password)
-            user.is_active = True
             user.save()
             myuser = UserAuthSerializer(user, context={'request': request})
             return Response({'message': 'signup successful.', 'status': 'success', 'results': myuser.data}, status=HTTP_201_CREATED)

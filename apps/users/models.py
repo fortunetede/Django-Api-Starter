@@ -18,12 +18,7 @@ class APPUserManager(BaseUserManager):
         if not email:
             raise ValueError('Users must have an email address')
 
-        user = self.model(
-            email=email,
-            first_name=first_name,
-            last_name=last_name
-        )
-
+        user = self.model(email=email, first_name=first_name, last_name=last_name )
         user.set_password(password)
         user.save(using=self._db)
 
@@ -31,13 +26,9 @@ class APPUserManager(BaseUserManager):
 
     def create_superuser(self, email, password, first_name, last_name):
         """
-        Creates and saves a superuser with the given email, password,
-        first_name and last_name.
+        Creates and saves a superuser with the given email, password, first_name and last_name.
         """
-        user = self.create_user(email,
-                                password=password,
-                                first_name=first_name,
-                                last_name=last_name)
+        user = self.create_user(email, password=password, first_name=first_name, last_name=last_name)
         user.is_admin = True
         user.save(using=self._db)
         return user
@@ -56,20 +47,12 @@ class APPUser(AbstractBaseUser):
     phone_number = models.CharField(blank=True, null=True, max_length=100)
     user_type = models.CharField(blank=True, null=True, max_length=500, choices=USER_TYPES)
     last_login = models.DateTimeField(blank=True, null=True)
-    is_active = models.BooleanField(default=True)
     created = models.DateTimeField(default=timezone.now)
     is_admin = models.BooleanField(default=False)
     objects = APPUserManager()
 
     USERNAME_FIELD = 'email'
     REQUIRED_FIELDS = ['first_name', 'last_name']
-
-    def get_full_name(self):
-        return '''{} {}'''.format(self.first_name, self.last_name)
-
-    @property
-    def is_staff(self):
-        return self.is_admin
 
     def has_perm(self, perm, obj=None):
         "Does the user have a specific permission?"
