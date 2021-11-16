@@ -32,13 +32,6 @@
         <li><a href="#users-app-models">Run Project</a></li>
       </ul>
     </li>
-    <li>
-      <a href="#users-app">User App</a>
-      <ul>
-        <li><a href="#users-app-models">Models</a></li>
-        <li><a href="#users-app-views">Views</a></li>
-      </ul>
-    </li>
   </ol>
 </details>
 
@@ -59,5 +52,7 @@ There are many great README templates available on GitHub; however, I didn't fin
 <!-- SETUP -->
 ## SETUP
 
-There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
-
+##### Clone project 
+```curl
+git clone https://github.com/fortunetede/Django-Api-Starter.git
+```
