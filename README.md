@@ -20,7 +20,7 @@
     <li>
       <a href="#about-the-project">About The Project</a>
       <ul>
-        <li><a href="#project-structure">Project Structure</a></li>
+        <li><a href="#why-das">Here's why Django Api Starter is Greate</a></li>
       </ul>
     </li>
     <li>
