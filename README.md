@@ -24,6 +24,12 @@
       </ul>
     </li>
     <li>
+      <a href="#setup">Setup</a>
+      <ul>
+        <li><a href="#users-app-models">Models</a></li>
+      </ul>
+    </li>
+    <li>
       <a href="#users-app">User App</a>
       <ul>
         <li><a href="#users-app-models">Models</a></li>
