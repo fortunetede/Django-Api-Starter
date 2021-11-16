@@ -26,7 +26,10 @@
     <li>
       <a href="#setup">Setup</a>
       <ul>
-        <li><a href="#users-app-models">Models</a></li>
+        <li><a href="#users-app-models">Clone project </a></li>
+        <li><a href="#users-app-models">Project Structure</a></li>
+        <li><a href="#users-app-models">Install Requirements</a></li>
+        <li><a href="#users-app-models">Run Project</a></li>
       </ul>
     </li>
     <li>
