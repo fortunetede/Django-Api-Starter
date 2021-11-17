@@ -61,9 +61,25 @@ git clone https://github.com/fortunetede/Django-Api-Starter.git
 ```
 |-apps
     |-users
+        |-admin.py
+        |-apps.py
+        |-models.py
+        |-serializers.py
+        |-urls.py
+        |-views.py
 |-project
     |-settings.py
     |-urls.py
+    |-views.py
+    |-wsgi.py
+|-static
+|-templates
+    |-index.html
+|-db.sqlites3
+|-manage.py
+|-Profile
+|-requirements.txt
+|-runtime.txt
 ```
 
 ##### Setup environment and Install Requirements
