@@ -99,4 +99,5 @@ git clone https://github.com/fortunetede/Django-Api-Starter.git
 > source venv/bin/activate
 >(venv)
 >cd django-api-starter
+   <a href="#project-structure">Project Structure </a>  
 ```
