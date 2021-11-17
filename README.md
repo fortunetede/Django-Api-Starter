@@ -100,4 +100,3 @@ git clone https://github.com/fortunetede/Django-Api-Starter.git
 >(venv)
 >cd django-api-starter
 ```
-<a href="#project-structure">Project Structure </a>  
