@@ -56,14 +56,16 @@ There are many great README templates available on GitHub; however, I didn't fin
 ```object
 git clone https://github.com/fortunetede/Django-Api-Starter.git
 ```
+
 ##### Project Structure
-``
+```
 |-apps
     |-users
 |-project
     |-settings.py
     |-urls.py
-``
+```
+
 ##### Setup environment and Install Requirements
 ```python
 # create a virtual environment
