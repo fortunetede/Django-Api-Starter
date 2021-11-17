@@ -93,7 +93,6 @@ git clone https://github.com/fortunetede/Django-Api-Starter.git
 > source venv/bin/activate  
 
 # New structure
-
 |-django-api-starter
 |-venv
 
