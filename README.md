@@ -84,7 +84,7 @@ git clone https://github.com/fortunetede/Django-Api-Starter.git
 
 ##### Setup environment and Install Requirements
 ```python
-# create a virtual environment
+# Create and Activate virtual environment
 
 > pip3 install virtualenv
 
@@ -100,3 +100,5 @@ git clone https://github.com/fortunetede/Django-Api-Starter.git
 >(venv)
 >cd django-api-starter
 ```
+
+
