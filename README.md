@@ -91,4 +91,13 @@ git clone https://github.com/fortunetede/Django-Api-Starter.git
 > virtualenv -p python3 venv
 
 > source venv/bin/activate  
+
+# New structure
+
+|-django-api-starter
+|-venv
+
+> source venv/bin/activate
+>(venv)
+>cd django-api-starter
 ```
