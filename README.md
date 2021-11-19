@@ -15,7 +15,7 @@
 
 <!-- Features -->
 <details>
-  <summary>Features</summary>
+  <summary>Context</summary>
   <ol>
     <li>
       <a href="#setup">Setup</a>
